@@ -43,5 +43,34 @@ html, body {
     height: 8px;
     background: #fff;  
   }
+
+  header {
+    background: #ffce7b;
+    padding: 20px 40px;
+  }
+  .contenido-encabezado {
+    display: flex;
+    gap: 20px;
+  }
+  .logo {
+    width: 60px; height: 60px;
+    background: #ffc464;
+  }
+  .bloque-texto {
+    flex: 1;
+  }
+  .barra-titulo {
+    width: 120px; height: 8px;
+    background: #fbb040;
+    margin-bottom: 8px;
+  }
+  .linea {
+    width: 100%; height: 4px;
+    background: #fff;
+    margin: 4px 0;
+  }
+  .linea.corta {
+    width: 60%;
+  }
   
   
