@@ -109,5 +109,50 @@ html, body {
 .salmón-oscuro  { background: #fc724a; }
 .amarilla-clara { background: #ffe189; }
 .dorado       { background: #ffc728; }
+pie {
+  background: #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 30px;
+}
+.caja-pie {
+  background: #cfcfcf;
+  width: 25%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+.linea-pie {
+  width: 80%; height: 4px;
+  background: #fff;
+}
 
+@media(max-width:800px){
+  .cuadricula {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+}
+@media(max-width:500px){
+  .mockup {
+    width: 100vw;
+    height: auto;
+  }
+  .cuadricula {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    gap: 10px;
+    padding: 20px;
+  }
+  pie {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+  .caja-pie {
+    width: 100%;
+  }
+}
   
