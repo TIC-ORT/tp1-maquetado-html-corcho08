@@ -72,5 +72,42 @@ html, body {
   .linea.corta {
     width: 60%;
   }
-  
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px 60px;
+  padding: 20px 40px;
+  justify-items: center;
+  align-items: center;
+}
+.tarjeta {
+  position: relative;
+  width: 100%;
+  max-width: 90px;
+  aspect-ratio: 1/1;
+}
+.parte-superior {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 10px;
+}
+.azul-claro   .parte-superior { background: #59d3e3; }
+.salmón       .parte-superior { background: #fc724a; }
+.amarilla-clara .parte-superior { background: #ffc728; }
+.interior {
+  position: absolute;
+  width: 50%;
+  aspect-ratio: 1/1;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.azul-claro   { background: #c4eff4; }
+.cian-claro   { background: #59d3e3; }
+.salmón       { background: #ffb09e; }
+.salmón-oscuro  { background: #fc724a; }
+.amarilla-clara { background: #ffe189; }
+.dorado       { background: #ffc728; }
+
   
